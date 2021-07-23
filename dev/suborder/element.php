@@ -3,7 +3,7 @@
 
   <!-- <img src="2.png" id="img2"> -->
 	<@ foreach in pagelist @>
-		@{id} @{top} @{left} @{ +main }
+		@{id} @{top} @{left} @{ +main } @{ +main-cn }
 	<@ end @>
 
 
