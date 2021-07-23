@@ -5,6 +5,10 @@
     font-style: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #about{
   padding-left:5vw;
   position: absolute;
