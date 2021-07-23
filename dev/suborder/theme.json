@@ -1,0 +1,9 @@
+{
+    "name": "suborder",
+    "description": "theme for suborder.group",
+    "author": "cleo miao",
+    "license": "MIT",
+    "tooltips": {
+        "+main": "The main content of the page"
+    }
+}

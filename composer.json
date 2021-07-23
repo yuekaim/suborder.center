@@ -1,6 +1,6 @@
 {
-    "name": "automad/automad",
-    "description": "A flat-file content management system and template engine",
+    "name": "cleomiao/suborder.center",
+    "description": "suborder.center",
     "keywords": ["cms"],
     "type": "project",
     "homepage": "https://automad.org",
@@ -17,6 +17,13 @@
     },
     "require": {
         "php": ">=5.6",
-        "automad/package-installer": "^1.1"
-    }
+        "automad/package-installer": "^1.1",
+        "cleomiao/suborder": "@dev"
+    },
+    "repositories": [
+         {
+             "type": "path",
+             "url": "./dev/suborder"
+         }
+     ]
 }

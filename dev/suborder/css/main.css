@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'barlaxentregular';
+    src: url('Barlaxent_2.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#about{
+  padding-left:5vw;
+  position: absolute;
+  font-size: 4em;
+  width: 80vw;
+  text-align:justify;
+}
+
+#img2{
+width:20vw;
+position: absolute;
+top: 150vh;
+left: 150vw;
+}
+
+#menu{
+  display: inline-grid;
+  grid-template-rows: 50px 50px;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  position: fixed;
+  right: 1em;
+  margin: 1em;
+  width: 5em;
+}
+
+button{
+  border-radius: 0;
+  border: 0px solid #000000;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  background-color: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  width: 300vw;
+  height: 300vh;
+  font-family: 'barlaxentregular';
+}
+
+.element{
+  position: absolute;
+}
