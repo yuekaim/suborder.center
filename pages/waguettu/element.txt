@@ -18,20 +18,4 @@ top: 800px
 
 -
 
-+main: {
-  "time": 1627060813005,
-  "blocks": [
-    {
-      "type": "image",
-      "data": {
-        "url": "screenshot-2021-07-09-at-23.12.14.png",
-        "caption": "哇圭土"
-      }
-    }
-  ],
-  "version": "2.20.2"
-}
-
--
-
 theme: cleomiao/suborder
