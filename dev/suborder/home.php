@@ -10,7 +10,11 @@
 	    <@ set { %lang: @{ ?lang } } @>
 	<@ end @>
 
-	<@ if @{ %lang } = 'cn' @>
+	<div class="language">
+
+	</div>
+
+	<@ if @{ %lang } = 'cn' and @{ +chinese } @>
 		<@ foreach in pagelist @>
 			<div class="element" id="@{id}" style="left:@{left}; top:@{top}">
 				@{ +chinese }
@@ -23,6 +27,25 @@
 			</div>
 		<@ end @>
 	<@ end @>
+
+	<div class="field has-addons">
+		<p class="control">
+			<a
+			href="?lang=en"
+			class="button is-dark<@ if @{ %lang | def('en') } = 'en' @> is-active<@ end @>"
+			>
+			English
+			</a>
+		</p>
+		<p class="control">
+			<a
+			href="?lang=de"
+			class="button is-dark<@ if @{ %lang } = 'de' @> is-active<@ end @>"
+			>
+			German
+			</a>
+		</p>
+	</div>
 
 
 
