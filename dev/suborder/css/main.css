@@ -58,3 +58,15 @@ body{
 .element{
   position: absolute;
 }
+
+.field{
+  position: fixed;
+}
+
+a .is-dark{
+  color: grey;
+}
+
+a .is-active{
+  color: green;
+}

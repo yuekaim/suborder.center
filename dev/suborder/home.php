@@ -42,7 +42,7 @@
 			href="?lang=cn"
 			class="button is-dark<@ if @{ %lang } = 'cn' @> is-active<@ end @>"
 			>
-			German
+			中文
 			</a>
 		</p>
 	</div>
