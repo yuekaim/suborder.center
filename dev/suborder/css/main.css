@@ -64,9 +64,9 @@ body{
 }
 
 a .is-dark{
-  color: grey;
+  background-color: grey;
 }
 
 a .is-active{
-  color: green;
+  background-color: green;
 }
