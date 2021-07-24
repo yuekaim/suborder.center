@@ -60,8 +60,21 @@
 // }
 
 $(document).ready(function () {
-    // Handler for .ready() called.
-    $('html, body').animate({
-        scrollTop: $('#about').offset().top
-    }, 'slow');
+    var x1, y1;
+    x1 = $('#about').position().left;
+    y1 = $('#about').position().top;
+    
+    if((navigator.userAgent.indexOf("Firefox") != -1)
+        || (navigator.userAgent.indexOf("Chrome") != -1)){
+        window.scrollTo(x1, y1);
+    }
+    else{
+      $("html, body").animate({
+        scrollTop: y1
+      }, {duration: 500, queue: false});
+
+      $("html, body").animate({
+        scrollLeft: x1
+      }, {duration: 500, queue: false});
+    }
 });
