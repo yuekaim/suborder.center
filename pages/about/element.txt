@@ -6,6 +6,23 @@ date: 2021-07-23 16:26:57
 
 -
 
++english: {
+  "time": 1627089385941,
+  "blocks": [
+    {
+      "type": "paragraph",
+      "data": {
+        "text": "sub:order center亞目事務所 is an interdisciplinary creative studio with four trainee artists and their mascot waguettu. We focus on experiments in design, art, culture, and social practices. We are a small team of creatives that is independent but tight-knit, with each member taking on diverse roles. The studio frequently involves other friends and collaborators for relevant projects. Our main focus is graphic design, web design, publication design, digital media, and art direction.",
+        "large": false,
+        "alignment": "left"
+      }
+    }
+  ],
+  "version": "2.20.2"
+}
+
+-
+
 +chinese: {
   "time": 1627075912125,
   "blocks": [

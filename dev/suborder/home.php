@@ -5,7 +5,7 @@
 	<@ end @>
 
   <!-- <img src="2.png" id="img2"> -->
-	<@ if @{ %lang } = 'cn' and @{ textGerman } @>
+	<@ if @{ %lang } = 'cn' and @{ +chinese } @>
 		<@ foreach in pagelist @>
 			<div class="element" id="@{id}" style="left:@{left}; top:@{top}">
 				@{ +chinese }
