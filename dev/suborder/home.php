@@ -4,7 +4,7 @@
 	<@ foreach in pagelist @>
 		<a href="/#@{id}">@{ title }</a>
 	<@ end @>
-<div>
+</div>
 	<p> test </p>
 
 		<@ foreach in pagelist @>
