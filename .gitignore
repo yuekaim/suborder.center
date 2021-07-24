@@ -16,6 +16,7 @@ uikit/index.html
 uikit/CONTRIBUTING.md
 uikit/CHANGELOG.md
 /vendor
+/pages
 /composer.lock
 packages/automad
 pages/test
