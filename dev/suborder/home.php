@@ -26,6 +26,11 @@
 			</div>
 		<@ end @>
   <@ end @>
+	<@ foreach in pagelist @>
+		<div class="element" id="@{id}" style="left:@{left}; top:@{top}">
+			@{ +english }
+		</div>
+	<@ end @>
 
 	<@ elements/menu.php @>
 
