@@ -13,16 +13,16 @@
 	<@ end @>
 
   <!-- <img src="2.png" id="img2"> -->
-	<@ if @{ %lang } = 'cn' and @{ chinese } @>
+	<@ if @{ %lang } = 'cn' and @{ +chinese } @>
 		<@ foreach in pagelist @>
 			<div class="element" id="@{id}" style="left:@{left}; top:@{top}">
-				@{ chinese }
+				@{ +chinese }
 			</div>
 		<@ end @>
 	<@ else @>
 		<@ foreach in pagelist @>
 			<div class="element" id="@{id}" style="left:@{left}; top:@{top}">
-				@{ english }
+				@{ +english }
 			</div>
 		<@ end @>
   <@ end @>
