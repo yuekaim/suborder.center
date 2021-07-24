@@ -10,7 +10,7 @@
 	    <@ set { %lang: @{ ?lang } } @>
 	<@ end @>
 
-	<@ if @{ %lang } = 'cn' and @{ +chinese } @>
+	<@ if @{ %lang } = 'cn' @>
 		<@ foreach in pagelist @>
 			<div class="element" id="@{id}" style="left:@{left}; top:@{top}">
 				@{ +chinese }
