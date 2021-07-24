@@ -1,5 +1,13 @@
 <@ elements/header.php @>
 
+<div id="menu">
+
+
+	<@ foreach in pagelist @>
+		<a href="/#@{id}">@{ title }</a>
+	<@ end @>
+<div>
+
 	<@ if @{ ?lang } @>
 		<@ set { %lang: @{ ?lang } } @>
 	<@ end @>
