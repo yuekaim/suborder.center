@@ -11,7 +11,7 @@
 	<link href="/packages/cleomiao/suborder/css/main.css" rel="stylesheet">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="scripts/main.js"></script>
+	<script src="/packages/cleomiao/suborder/js/main.js"></script>
 
 </head>
 <body>
