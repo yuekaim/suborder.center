@@ -1,8 +1,6 @@
 <@ elements/header.php @>
 
 <div id="menu">
-
-
 	<@ foreach in pagelist @>
 		<a href="/#@{id}">@{ title }</a>
 	<@ end @>
@@ -13,7 +11,7 @@
 	<@ end @>
 
   <!-- <img src="2.png" id="img2"> -->
-	<@ if @{ %lang } = 'cn' and @{ +chinese } @>
+	<@ if @{ %lang } = 'cn' @>
 		<@ foreach in pagelist @>
 			<div class="element" id="@{id}" style="left:@{left}; top:@{top}">
 				@{ +chinese }
@@ -26,11 +24,6 @@
 			</div>
 		<@ end @>
   <@ end @>
-	<@ foreach in pagelist @>
-		<div class="element" id="@{id}" style="left:@{left}; top:@{top}">
-			@{ +english }
-		</div>
-	<@ end @>
 
 	<@ elements/menu.php @>
 
