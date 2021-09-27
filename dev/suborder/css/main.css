@@ -63,10 +63,10 @@ body{
   position: fixed;
 }
 
-a .is-dark{
+.button .is-dark{
   background-color: grey;
 }
 
-a .is-active{
+.button .is-active{
   background-color: green;
 }
