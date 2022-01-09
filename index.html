@@ -28,7 +28,7 @@
     z-index: 100;
     /* top: 60vh; */
     width: 90vw;
-    bottom: 1em;
+    bottom: 2em;
     left: 50vw;
     transform: translateX(-50%);
     text-align: center;
@@ -40,13 +40,117 @@
   a:hover{
     color: #0000ff;
   }
+
+  body {background-color: #000000}
+  .p3 a {
+    font-family: 'barlaxentregular';
+    /* font-family: cursive; */
+    font-size: 2em;
+    color: #00ff00;
+  }
+  .p1{
+    font-size: 3em;
+    text-align: center;
+  }
+  .p3{
+    text-align: center;
+  }
+  .links{
+    display: none;
+  }
+  form{
+    text-align: center;
+
+  }
+  input{
+    font-family: 'barlaxentregular';
+    /* font-family: cursive; */
+    font-size: 1.5em;
+    color: #00ff00;
+    background-color: black;
+    border: none;
+    border-top: 1px solid #00ff00;
+    /* border-radius: 1em; */
+    padding: 0.5em;
+  }
+  #pass{
+    width: 80%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+  }
+  #submit{
+    width: 20%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    border-left: 1px solid #00ff00;
+  }
+  input:focus{
+    /* background-color: white; */
+    border-top: 1px solid white;
+  }
+  input:focus-visible{
+    outline: none;
+  }
+  #submit:hover{
+    background-color: #00ff00;
+    color: black;
+    transition-duration: 0.3s;
+    cursor: pointer;
+  }
 </style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
 </head>
 <body>
 
-<img src="hi.gif" alt="">
+<img class="home" src="hi.gif" alt="">
 <!-- <img id="1" src="hi.jpg" alt=""> -->
-<h3><a href="mailto:hi@suborder.center">hi@suborder.center</a></h3>
+<h3 class="home"><a href="mailto:hi@suborder.center">hi@suborder.center</a></h3>
+
+<!-- 密码部分 -->
+<SCRIPT>
+function check(ele) {
+  if(event.key === 'Enter') {
+      passWord();
+      console.log('hi');
+  }
+}
+function passWord() {
+  var pass = document.getElementById("pass");
+  if (pass.value == "suborder2021"){
+    console.log('hi');
+    $('input').hide();
+    $('.home').hide();
+    $('.links').first().fadeIn(300);
+  }
+}
+</SCRIPT>
+<CENTER>
+</CENTER>
+
+  <p class="p1"><span class="s1">🔗</span></p>
+  <FORM onSubmit="return false;">
+  <input id="pass" type="text" value="" onKeyDown="check(this)">
+  <input id="submit" type="button" value="reveal" onClick="passWord()">
+  </FORM>
+<div class="links">
+  <p class="p3"><span class="s3"><a target="_blank" href="http://vorbildsammlung.de/">http://vorbildsammlung.de/</a></span></p>
+  <p class="p3"><span class="s3"><a target="_blank" href="https://thorn-apple-project.com/">https://thorn-apple-project.com</a></span></p>
+  <p class="p3"><span class="s3"><a target="_blank" href="https://variabilityofdistance.curahanhati.xyz/">https://variabilityofdistance.curahanhati.xyz</a></span></p>
+  <p class="p3"><span class="s3"><a target="_blank" href="https://art-education.hfbk.net/">https://art-education.hfbk.net/</a></span></p>
+  <p class="p3"><span class="s3"><a target="_blank" href="https://liturgyspecific.art/">https://liturgyspecific.art</a></span></p>
+  <p class="p3"><span class="s3"><a target="_blank" href="https://liturgyspecific.art/love-me/">https://liturgyspecific.art/love-me/</a></span></p>
+  <p class="p3"><span class="s3"><a target="_blank" href="http://naber-dowd.digitale-grafik.com/">http://naber-dowd.digitale-grafik.com/</a></span></p>
+  <p class="p3"><span class="s3"><a target="_blank" href="https://repository.group/">https://repository.group</a></span></p>
+  <p class="p4"><span class="s1"></span><br></p>
+  <p class="p3"><span class="s3"><a target="_blank" href="https://suborder.center/">https://suborder.center</a></span></p>
+  <p class="p3"><span class="s3"><a target="_blank" href="https://suborder.center/suborder-portfolio-2021.pdf">→ portfolio pdf ←</a></span></p>
+
+</div>
+<!-- 密码end -->
 
 </body>
 </html>
